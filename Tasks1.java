@@ -2,7 +2,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class Tasks1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -10,74 +10,34 @@ public class Main {
         while (true) {
             System.out.println("\nВыберите задачу (1-20) или 0 для выхода:");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
-                case 0:
+                case 0 -> {
                     System.out.println("Выход из программы.");
                     return;
-                case 1:
-                    task1(scanner);
-                    break;
-                case 2:
-                    task2(scanner);
-                    break;
-                case 3:
-                    task3();
-                    break;
-                case 4:
-                    task4(scanner);
-                    break;
-                case 5:
-                    task5(scanner);
-                    break;
-                case 6:
-                    task6(scanner);
-                    break;
-                case 7:
-                    task7(scanner);
-                    break;
-                case 8:
-                    task8(scanner);
-                    break;
-                case 9:
-                    task9(scanner);
-                    break;
-                case 10:
-                    task10(scanner);
-                    break;
-                case 11:
-                    task11(scanner);
-                    break;
-                case 12:
-                    task12(scanner);
-                    break;
-                case 13:
-                    task13(scanner);
-                    break;
-                case 14:
-                    task14(scanner);
-                    break;
-                case 15:
-                    task15(scanner);
-                    break;
-                case 16:
-                   task16(scanner);
-                   break;
-                case 17:
-                    task17(scanner);
-                    break;
-                case 18:
-                     task18(scanner);
-                     break;
-                case 19:
-                    task19(scanner);
-                    break;
-                case 20:
-                    task20(scanner);
-                    break;
-                default:
-                    System.out.println("Неверный выбор. Попробуйте еще раз.");
+                }
+                case 1 -> task1(scanner);
+                case 2 -> task2(scanner);
+                case 3 -> task3();
+                case 4 -> task4(scanner);
+                case 5 -> task5(scanner);
+                case 6 -> task6(scanner);
+                case 7 -> task7(scanner);
+                case 8 -> task8(scanner);
+                case 9 -> task9(scanner);
+                case 10 -> task10(scanner);
+                case 11 -> task11(scanner);
+                case 12 -> task12(scanner);
+                case 13 -> task13(scanner);
+                case 14 -> task14(scanner);
+                case 15 -> task15(scanner);
+                case 16 -> task16(scanner);
+                case 17 -> task17(scanner);
+                case 18 -> task18(scanner);
+                case 19 -> task19(scanner);
+                case 20 -> task20(scanner);
+                default -> System.out.println("Неверный выбор. Попробуйте еще раз.");
             }
         }
     }
